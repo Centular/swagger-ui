@@ -6,7 +6,7 @@ RUN apk add --update nginx
 RUN mkdir -p /run/nginx
 
 COPY nginx.conf /etc/nginx/
-ADD ./dist/ /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
 
 EXPOSE 8080
 
