@@ -1,6 +1,6 @@
 web:
   image: centular/swagger-ui
   environment:
-    - "URL=http://petstore.swagger.io/v2/swagger.json"
+    - "URL=https://s3-eu-west-1.amazonaws.com/centular-swagger/swagger.json"
   ports:
-    - '80:8888'
+    - '80:8080'
